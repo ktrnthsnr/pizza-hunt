@@ -20,15 +20,17 @@ https://
 
 ## Description
 
-- In this social networking application API, users may sign-in and update a pizza with custom topping, and also interact with a list of friends. The user may post some of their thoughts and also react to each other's thoughts. Additionally, users may be able to edit or delete these as well. 
+- This repo's work is focused on building out the back-end and middleware of a social networking application, pizz-hunt, that integrates with an existing front-end. From the Heroku pizza-hunt website, users may sign-in and update a pizza with custom topping, and also interact with a list of other users, discussing the pizza toppings, crust and sauces of their choice. In the website, a user may post some of their thoughts and also react to each other's thoughts. Additionally, users may be able to edit or delete these as well. 
 
 - The Node.js based API uses Express.js for routing, MongoDB as data storage for the NoSQL backend database, Mongoose Object Data Management (ODM) system to create and manage the database queries on startup, and Moment.js npm package to format any time dependent aspects of the application. 
 
-- This Readme.md includes a walkthrough of the backend portion of the work required by a website to provide large amounts of unstructured data. The walkthrough listed under the TOC Usage, shows the application if it were cloned to a localhost and started at the Node.js commandline, with the API endpoints viewed through the Insomnia tool. Invoking the application at the bash terminal, the JavaScript begins with the start up of the Express.js server which then creates the Mongoose table models, syncing to the MongoDB backend. Then through the debugging Insomnia tool, you can view the API routes and JSON output shown when a user is created, their friends are added to their lists, and their thoughts and reactions to their friends' thoughts are added, updated or removed - basically the social interaction of a group of friends!
+- This Readme.md includes a walkthrough of the backend portion of the work, the majority of the work for this project, required by the website to provide large amounts of unstructured data. 
+- The first walkthrough shows the application from the user's point of view, throught the Heroku website features.
+- The second walkthrough listed under the TOC Usage, shows the application as if it were cloned to a localhost and started at the Node.js commandline, with the API endpoints viewed through the Insomnia tool. Invoking the application at the bash terminal, the JavaScript begins with the start up of the Express.js server which then creates the Mongoose table models, syncing to the MongoDB backend. Then through the debugging Insomnia tool, you can view the API routes and JSON output shown when a user is created, their friends are added to their lists, and their thoughts and reactions to their friends' thoughts are added, updated or removed - basically the social interaction of a group of friends!
 
 ## Technology
 
-MongoDB, Express.js, Mongoose, Insomnia, Node.js, JavaScript, ES6, npm, Heroku
+MongoDB, Express.js, Mongoose JS, Insomnia, Node.js, JavaScript, ES6, npm, Heroku
 
 ## Installations
 
