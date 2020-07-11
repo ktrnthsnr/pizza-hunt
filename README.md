@@ -1,5 +1,5 @@
 # pizza-hunt
-Social networking mobile application, containing a MongoDB and Mongoose JS API back-end and middleware, integrated with an existing Node.js based front-end.
+Social networking application, supported by a MongoDB and Mongoose JS API database and middleware, integrating with an existing Node.js based front-end.
 
 ## GitHub URL
 https://github.com/ktrnthsnr/pizza-hunt
@@ -29,12 +29,11 @@ https://
 - The second walkthrough listed under the TOC Usage, shows the application as if it were cloned to a localhost and started at the Node.js commandline, with the API endpoints viewed through the Insomnia tool. Invoking the application at the bash terminal, the JavaScript begins with the start up of the Express.js server which then creates the Mongoose table models, syncing to the MongoDB backend. Then through the debugging Insomnia tool, you can view the API routes and JSON output shown when a user is created, their friends are added to their lists, and their thoughts and reactions to their friends' thoughts are added, updated or removed - basically the social interaction of a group of friends!
 
 ## Technology
-
 MongoDB, Express.js, Mongoose JS, Insomnia, Node.js, JavaScript, ES6, npm, Heroku
 
 ## Installations
-
-- Prereq: install VSCode, Node.js, and MySQL http://dev.mysql.com/downloads/
+- For local installations, below are various steps required.
+- Prereq for your desktop: install VSCode, Node.js, and MySQL http://dev.mysql.com/downloads/
 - After cloning the GitHub repo to your local drive, run the following in the VSCode command-line terminal
 - Install all components listed within the package.json file for npm
 - $ `npm i`
@@ -44,10 +43,13 @@ MongoDB, Express.js, Mongoose JS, Insomnia, Node.js, JavaScript, ES6, npm, Herok
 - Manaully update the package.json to  `"main": "server.js",` instead of index.js
 - Create a .gitignore file in the root and add `node_modules` to this file
 - If you need to re-add the dependencies, run $ `npm install`
+- Install npm express, more info https://www.npmjs.com/package/express
+- $ `npm install express`
+- Install MongoDB, first create a `c:\data\db` directory on your root, then install the Community Server https://www.mongodb.com/try/download/community, excluding the compass from the installation, and adding the /bin folder to the environment variable PATH.
 
 ## Usage
-
-- If this applicatin is cloned from github, complete the installationt, then start up at the bash commandline, by typing
+- The application may be viewed through the Heroku website.
+- However, if cloning locally from github, complete the installation, then start up at the bash commandline, by typing
 - $ `npm start`
 - Here is walkthrough of the application from the localhost, if viewing the API routes through Insomnia,
 
