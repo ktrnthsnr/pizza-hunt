@@ -1,5 +1,5 @@
 # pizza-hunt
-Social networking application, supported by a MongoDB and Mongoose JS API database and middleware, integrating with an existing Node.js based front-end.
+Social networking application, supported by a MongoDB and MongooseJS library, integrating with an existing Node.js based front-end.
 
 ## GitHub URL
 https://github.com/ktrnthsnr/pizza-hunt
@@ -15,7 +15,7 @@ https://
 * [Installations](#installations)
 * [Usage](#usage)
 * [Testing](#testing)
-* [Schema](#schema)
+* [Collections](#collections)
 * [Contribution](#contribution)
 
 ## Description
@@ -29,7 +29,7 @@ https://
 - The second walkthrough listed under the TOC Usage, shows the application as if it were cloned to a localhost and started at the Node.js commandline, with the API endpoints viewed through the Insomnia tool. Invoking the application at the bash terminal, the JavaScript begins with the start up of the Express.js server which then creates the Mongoose table models, syncing to the MongoDB backend. Then through the debugging Insomnia tool, you can view the API routes and JSON output shown when a user is created, their friends are added to their lists, and their thoughts and reactions to their friends' thoughts are added, updated or removed - basically the social interaction of a group of friends!
 
 ## Technology
-MongoDB, Express.js, Mongoose JS, Insomnia, Node.js, JavaScript, ES6, npm, Heroku
+MongoDB, Mongoose JS, Node.js, npm, Express.js, Insomnia, JavaScript, ES6, Heroku, HTML, CSS
 
 ## Installations
 - For local installations, below are various steps required.
@@ -45,7 +45,9 @@ MongoDB, Express.js, Mongoose JS, Insomnia, Node.js, JavaScript, ES6, npm, Herok
 - If you need to re-add the dependencies, run $ `npm install`
 - Install npm express, more info https://www.npmjs.com/package/express
 - $ `npm install express`
-- Install MongoDB, first create a `c:\data\db` directory on your root, then install the Community Server https://www.mongodb.com/try/download/community, excluding the compass from the installation, and adding the /bin folder to the environment variable PATH.
+- Install MongoDB, first create a `c:\data\db` directory on your root, then install the Community Server from https://www.mongodb.com/try/download/community, excluding the compass from the installation, and adding the /bin folder to the environment variable PATH.
+- Install the MoongooseJS library
+- $ `npm install mongoose`
 
 ## Usage
 - The application may be viewed through the Heroku website.
@@ -62,7 +64,7 @@ MongoDB, Express.js, Mongoose JS, Insomnia, Node.js, JavaScript, ES6, npm, Herok
 - For testing the API routes locally, here is an Insomnia walkthrough to view GET, POST, PULL, DELETE API routes
 <insert Screencastify link>
 
-## Schema
+## Collections
 
 
 ## Contribution
