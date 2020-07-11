@@ -23,4 +23,4 @@ $ mongo
 4. add pizza API\router get routes to /routes
 5. add /routes/api/pizza-routes.js, integrate wit /routes/index.js
 6. test GET\POST\PULL\DELETE or CRUD routes within Insomnia tool for /api/pizzas and /ID
-7. add POST functionality to front-end form, create a pizza - update add-pizza.js
+7. add POST functionality to front-end form, create a pizza, updated add-pizza.js
