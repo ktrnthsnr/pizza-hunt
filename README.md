@@ -22,7 +22,7 @@ https://
 
 - This repo's work is focused on building out the back-end and middleware of a social networking application, pizz-hunt, that integrates with an existing front-end. From the Heroku pizza-hunt website, users may sign-in and update a pizza with custom topping, and also interact with a list of other users, discussing the pizza toppings, crust and sauces of their choice. In the website, a user may post some of their thoughts and also react to each other's thoughts. Additionally, users may be able to edit or delete these as well. 
 
-- The Node.js based API uses Express.js for routing, MongoDB as data storage for the NoSQL backend database, Mongoose Object Data Management (ODM) system to create and manage the database queries on startup, and Moment.js npm package to format any time dependent aspects of the application. 
+- The Node.js based API uses Express.js for routing, MongoDB as data storage for the NoSQL backend database, Mongoose Object Data Management (ODM) system as the middleware to create and manage the database queries on startup, and Moment.js npm package to format any time dependent aspects of the application. 
 
 - This Readme.md includes a walkthrough of the backend portion of the work, the majority of the work for this project, required by the website to provide large amounts of unstructured data. 
 - The first walkthrough shows the application from the user's point of view, throught the Heroku website features.
@@ -46,7 +46,7 @@ MongoDB, Mongoose JS, Node.js, npm, Express.js, Insomnia, JavaScript, ES6, Herok
 - Install npm express, more info https://www.npmjs.com/package/express
 - $ `npm install express`
 - Install MongoDB, first create a `c:\data\db` directory on your root, then install the Community Server from https://www.mongodb.com/try/download/community, excluding the compass from the installation, and adding the /bin folder to the environment variable PATH.
-- Install the MoongooseJS library
+- Install the middleware MoongooseJS library
 - $ `npm install mongoose`
 
 ## Usage
