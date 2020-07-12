@@ -5,6 +5,12 @@ const pizzaController = {
         //callback function for the GET /api/pizzas route
     getAllPizza(req, res) {
       Pizza.find({})
+      .populate({           // added so with commentID, the comment(s) is populated as well.
+        path: 'comments',   //    comments added
+        select: '-__v'      //    exclude the __v in the comments
+      })                    //    end popoulate.
+        .select('-__v')     //    with excluded __v above.
+        .sort({ _id: -1 })      // adding sort() method to sort DESC, to get latest pizza
         .then(dbPizzaData => res.json(dbPizzaData))
         .catch(err => {
           console.log(err);
