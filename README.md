@@ -29,7 +29,7 @@ https://github.com/ktrnthsnr/pizza-hunt
 - The second walkthrough listed under the TOC Usage, shows the application as if it were cloned to a localhost and started at the Node.js commandline, with the API endpoints viewed through the Insomnia tool. Invoking the application at the bash terminal, the JavaScript begins with the start up of the Express.js server which then creates the Mongoose table models, syncing to the MongoDB backend. Then through the debugging Insomnia tool, you can view the API routes and JSON output shown when a user is created, their friends are added to their lists, and their thoughts and reactions to their friends' thoughts are added, updated or removed - basically the social interaction of a group of friends!
 
 ## Technology
-MongoDB, Mongoose JS, Node.js, npm, Express.js, Insomnia, JavaScript, ES6, Heroku, HTML, CSS
+MongoDB, Mongoose JS, Node.js, npm, Express.js, Moment.js, Insomnia, JavaScript, ES6, Heroku, HTML, CSS
 
 ## Installations
 - For local installations, below are various steps required.
@@ -48,6 +48,8 @@ MongoDB, Mongoose JS, Node.js, npm, Express.js, Insomnia, JavaScript, ES6, Herok
 - Install MongoDB, first create a `c:\data\db` directory on your root, then install the Community Server from https://www.mongodb.com/try/download/community, excluding the compass from the installation, and adding the /bin folder to the environment variable PATH.
 - Install the middleware MoongooseJS library
 - $ `npm install mongoose`
+- Install npm Moment.js
+- $ `npm install moment`
 
 ## Usage
 - The application may be viewed through the Heroku website.

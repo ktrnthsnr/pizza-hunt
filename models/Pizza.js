@@ -1,4 +1,5 @@
 const { Schema, model } = require('mongoose');
+const moment = require('moment');   // will format createdAd date to look better
 
 //schema
 const PizzaSchema = new Schema(
@@ -10,10 +11,18 @@ const PizzaSchema = new Schema(
     createdBy: {
       type: String
     },
-    createdAt: {    // will auto-generate per Date.now, no need to add to JSON in POST
+    // createdAt: {    // will auto-generate per Date.now, no need to add to JSON in POST
+    //   type: Date,
+    //   default: Date.now
+    // },
+
+    // with Moment.js installed, use Getter with Mongoose, by adding a get key to the field
+    createdAt: {
       type: Date,
-      default: Date.now
+      default: Date.now,
+      get: (createdAtVal) => moment(createdAtVal).format('MMM DD, YYYY [at] hh:mm a')
     },
+
     size: {
       type: String,
       default: 'Large'
@@ -33,6 +42,7 @@ const PizzaSchema = new Schema(
       {
         toJSON: {
           virtuals: true,
+          getters: true   // work with moment.js, date formatter Getter as per above
         },
         id: false
       }   
