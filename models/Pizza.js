@@ -41,18 +41,22 @@ const PizzaSchema = new Schema(
       // this Virtual is for counts of comments
       {
         toJSON: {
-          virtuals: true,
+          virtuals: true,  // (2) virtual set to true
           getters: true   // work with moment.js, date formatter Getter as per above
         },
         id: false
       }   
   );
 
-// --  To add virtuals, (1) this snippet, plus (2) update schema above with toJSON property
-      //get total count of comments and replies on retrieval
-    PizzaSchema.virtual('commentCount').get(function() {
-      return this.comments.length;
-    });
+// --  To add virtuals, (1) this definition (2) update schema above with toJSON property
+      //get total count of comments and replies on retrieval, updated to gain tally of every comment with replies
+  PizzaSchema.virtual('commentCount').get(function() {
+        return this.comments.reduce((total, comment) => total + comment.replies.length + 1, 0);
+  });
+ 
+      // PizzaSchema.virtual('commentCount').get(function() {
+    //   return this.comments.length;
+    // });
     
     
 

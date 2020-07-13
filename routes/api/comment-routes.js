@@ -1,16 +1,39 @@
 // import methods from comment-controller file
 const router = require('express').Router();
-const { addComment, removeComment } = require('../../controllers/comment-controller');
+// const { addComment, removeComment } = require('../../controllers/comment-controller');
+
+// import methods from the comments controller
+const {
+        addComment,
+        removeComment,
+        addReply,
+        removeReply
+      } = require('../../controllers/comment-controller');      
 
 // ---------------- routes ----------------
 
-//      /api/comments/<pizzaId>
-router.route('/:pizzaId').post(addComment);
+//      POST /api/comments/<pizzaId>
+router
+        .route('/:pizzaId').post(addComment);
 
-//      /api/comments/<pizzaId>/<commentId>    
-router.route('/:pizzaId/:commentId').delete(removeComment);
+//      GET for comment by ID
+//      PUT for reply /api/comments/<pizzaId>/<commentId>  
+//      DELETE for comment
+router
+        .route('/:pizzaId/:commentId')        // comment routes
+        .put(addReply)                        // reply routes, which are within the comment controller
+        .delete(removeComment)                // delete comment
 
-        // note: comments are located in two areas, in ID with pizza, need to be deleted in two locations
+//      DELETE route for Reply /api/comments/<pizzaId>/<commentId>/<replyID>    
+router
+        .route('/:pizzaId/:commentId/:replyId').delete(removeReply);
 
 //export 
 module.exports = router;
+
+
+// previous
+        //      /api/comments/<pizzaId>/<commentId>    
+// router.route('/:pizzaId/:commentId').delete(removeComment);
+
+        // note: comments are located in two areas, in ID with pizza, need to be deleted in two locations
