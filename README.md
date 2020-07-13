@@ -1,11 +1,10 @@
 # pizza-hunt
-Social networking application, supported by a MongoDB and MongooseJS library, integrating with an existing Node.js based front-end.
+
+Social networking application, supported at the backend by Node.js, Express, a MongoDB and MongooseJS, integrating with an existing JavaScript based front-end.
 
 ## GitHub URL
-https://github.com/ktrnthsnr/pizza-hunt
 
-## Heroku website
-<insert here>
+https://github.com/ktrnthsnr/pizza-hunt
 
 
 ## Table of Contents
@@ -15,7 +14,6 @@ https://github.com/ktrnthsnr/pizza-hunt
 * [Installations](#installations)
 * [Usage](#usage)
 * [Testing](#testing)
-* [Collections](#collections)
 * [Contribution](#contribution)
 
 ## Description
@@ -29,9 +27,11 @@ https://github.com/ktrnthsnr/pizza-hunt
 - The second walkthrough listed under the TOC Usage, shows the application as if it were cloned to a localhost and started at the Node.js commandline, with the API endpoints viewed through the Insomnia tool. Invoking the application at the bash terminal, the JavaScript begins with the start up of the Express.js server which then creates the Mongoose table models, syncing to the MongoDB backend. Then through the debugging Insomnia tool, you can view the API routes and JSON output shown when a user is created, their friends are added to their lists, and their thoughts and reactions to their friends' thoughts are added, updated or removed - basically the social interaction of a group of friends!
 
 ## Technology
+
 MongoDB, Mongoose JS, Node.js, npm, Express.js, Moment.js, Insomnia, JavaScript, ES6, Heroku, HTML, CSS
 
 ## Installations
+
 - For local installations, below are various steps required.
 - Prereq for your desktop: install VSCode, Node.js, and MySQL http://dev.mysql.com/downloads/
 - After cloning the GitHub repo to your local drive, run the following in the VSCode command-line terminal
@@ -52,21 +52,23 @@ MongoDB, Mongoose JS, Node.js, npm, Express.js, Moment.js, Insomnia, JavaScript,
 - $ `npm install moment`
 
 ## Usage
+
 - The application may be viewed through the Heroku website.
 - However, if cloning locally from github, complete the installation, then start up at the bash commandline, by typing
 - $ `npm start`
-- Here is walkthrough of the application from the localhost, if viewing the API routes through Insomnia,
-
-- 
-![site](./img/site.jpg "insert")
-
+- Here is walkthrough of the application from the localhost:3001
+https://drive.google.com/file/d/1cd6HT95vRU7Z84S9-gvTwtw4YZ06W2ps/view
+- Create  pizza page
+![Create of Pizzas](./createpizza.jpg "Create a pizzas")
+- List of pizzas page
+![List of Pizzas](./listofpizzas.jpg "List of pizzas")
+- Comments page
+![Comments](./comments.jpg "Comment on a pizzas")
 
 ## Testing
 
-- For testing the API routes locally, here is an Insomnia walkthrough to view GET, POST, PULL, DELETE API routes
-<insert Screencastify link>
-
-## Collections
+- For testing the API routes locally, here is an Insomnia walkthrough to view GET, POST, PULL, DELETE API routess
+https://drive.google.com/file/d/14Qql6wSrIxdrW3dv8PRZbT6fr3WiANVa/view
 
 
 ## Contribution
