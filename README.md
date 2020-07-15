@@ -6,6 +6,12 @@ Social networking application, supported at the backend by Node.js, Express, a M
 
 https://github.com/ktrnthsnr/pizza-hunt
 
+## Heroku Website
+- Homepage
+https://ktrnthsnr-pizza-hunt.herokuapp.com/
+- Add a pizza type
+https://ktrnthsnr-pizza-hunt.herokuapp.com/add-pizza
+
 
 ## Table of Contents
 
