@@ -6,7 +6,7 @@ Social networking application, supported at the backend by Node.js, Express, a M
 
 https://github.com/ktrnthsnr/pizza-hunt
 
-## Heroku Website
+## Heroku Website using mLab add-on
 - Homepage
 https://ktrnthsnr-pizza-hunt.herokuapp.com/
 - Add a pizza type
@@ -34,7 +34,7 @@ https://ktrnthsnr-pizza-hunt.herokuapp.com/add-pizza
 
 ## Technology
 
-MongoDB, Mongoose JS, Node.js, npm, Express.js, Moment.js, Insomnia, JavaScript, ES6, Heroku, HTML, CSS
+MongoDB, Mongoose JS, Node.js, npm, Express.js, Moment.js, Insomnia, JavaScript, ES6, Heroku, mLab, HTML, CSS
 
 ## Installations
 
