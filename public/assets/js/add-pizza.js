@@ -66,9 +66,14 @@ const handlePizzaSubmit = event => {
       alert('Pizza created successfully!');
       console.log(postResponse);
     })
+    //updated for indexdb (open a transaction if no internet)
     .catch(err => {
       console.log(err);
+      saveRecord(formData);
     });
+    // .catch(err => {
+    //   console.log(err);
+    // });
 };
 
 $pizzaForm.addEventListener('submit', handlePizzaSubmit);

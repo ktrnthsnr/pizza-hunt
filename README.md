@@ -67,7 +67,7 @@ https://drive.google.com/file/d/1cd6HT95vRU7Z84S9-gvTwtw4YZ06W2ps/view
 - Create  pizza page
 - ![Create of Pizzas](./img/createpizza.jpg "Create a pizzas")
 - List of pizzas page
-- ![List of Pizzas](./listofpizzas.jpg "List of pizzas")
+- ![List of Pizzas](./img/listofpizzas.jpg "List of pizzas")
 - Comments page
 ![Comments](./img/comments.jpg "Comment on a pizzas")
 
