@@ -39,7 +39,7 @@ MongoDB, Mongoose JS, Node.js, npm, Express.js, Moment.js, Insomnia, JavaScript,
 ## Installations
 
 - For local installations, below are various steps required.
-- Prereq for your desktop: install VSCode, Node.js, and MySQL http://dev.mysql.com/downloads/
+- Prereq for your desktop: install VSCode, Node.js
 - After cloning the GitHub repo to your local drive, run the following in the VSCode command-line terminal
 - Install all components listed within the package.json file for npm
 - $ `npm i`
